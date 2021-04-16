@@ -1,0 +1,4 @@
+SELECT ?x ?name  WHERE {   
+  ?x <http://xmlns.com/foaf/0.1/knows> ?y .   
+  ?y <http://xmlns.com/foaf/0.1/name>  ?name .   
+} 

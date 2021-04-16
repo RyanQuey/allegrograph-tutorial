@@ -1,0 +1,6 @@
+INSERT DATA { ex:john foaf:knows ex:karen .   
+	  ex:karen foaf:knows ex:alex .   
+	  ex:karen foaf:name "Karen" .   
+	  ex:alex foaf:name "Alex" .   
+	  ex:barry foaf:name "Barry" .   
+        } 

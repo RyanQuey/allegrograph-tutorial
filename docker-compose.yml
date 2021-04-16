@@ -1,0 +1,17 @@
+version: '3'
+services:
+  allegrograph:
+    image: franzinc/agraph
+    ports:
+      - "10000-10035:10000-10035"
+    volumes:
+      - agdata:/agraph/data
+      - agconfig:/agraph/etc
+    environment: 
+      - AGRAPH_SUPER_USER=admin
+      - AGRAPH_SUPER_PASSWORD=pass
+    shm_size: 1gb
+
+volumes:
+  agdata:
+  agconfig:

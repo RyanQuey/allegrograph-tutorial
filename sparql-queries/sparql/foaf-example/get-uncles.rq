@@ -1,0 +1,9 @@
+PREFIX ex: <http://example.com/>  
+CONSTRUCT {  
+  ?x ex:uncle ?uncle  
+}  
+WHERE {  
+  { ?x ex:mother [ ex:brother ?uncle ] }  
+  UNION  
+  { ?x ex:father [ ex:brother ?uncle ] }  
+} 

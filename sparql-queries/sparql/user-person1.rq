@@ -1,0 +1,3 @@
+# https://franz.com/agraph/support/documentation/current/agraph-quick-start.html
+select ?p ?o WHERE {<http://www.franz.com/simple#person1> ?p ?o} 
+

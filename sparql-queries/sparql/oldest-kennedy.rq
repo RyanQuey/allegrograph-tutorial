@@ -1,0 +1,10 @@
+#https://franz.com/agraph/support/documentation/current/agraph-quick-start.html
+PREFIX o: <http://www.franz.com/simple#>  
+  SELECT ?person ?birthYear {  
+    ?person o:birth-year ?birthYear  
+    OPTIONAL {  
+      ?person o:death-year ?deathYear  
+    }  
+    FILTER( !bound( ?deathYear ) )  
+  } order by ?birthYear  
+  LIMIT 1  

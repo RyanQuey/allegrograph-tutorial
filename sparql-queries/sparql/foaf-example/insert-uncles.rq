@@ -1,0 +1,5 @@
+INSERT DATA {ex:bill ex:mother ex:doris .  
+             ex:doris ex:brother ex:billsuncle .  
+             ex:fred ex:brother ex:billsotheruncle .   
+             ex:bill ex:father ex:fred .   
+             } 

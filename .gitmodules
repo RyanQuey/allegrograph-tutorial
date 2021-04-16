@@ -1,0 +1,3 @@
+[submodule "agraph-examples"]
+	path = agraph-examples
+	url = https://github.com/franzinc/agraph-examples.git

@@ -1,0 +1,8 @@
+# https://franz.com/agraph/support/documentation/current/agraph-quick-start.html
+PREFIX o: <http://www.franz.com/simple#>  
+  SELECT ?x ?p {  
+  ?x o:sex o:male ;  
+     o:alma-mater o:Harvard ;  
+     o:profession ?p .  
+  }  
+  ORDER BY ?p  
